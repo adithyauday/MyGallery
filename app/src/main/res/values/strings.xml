@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">My Kart</string>
+    <string name="picture">Picture</string>
+    <string name="description_info">Info</string>
+    <string name="request_permission">This sample needs camera permission.</string>
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="title">MyKart</string>
+    <string name="content">You have unbought in your Kart, click to check</string>
+</resources>

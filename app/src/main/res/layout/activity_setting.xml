@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rlm"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="fill"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/imageview_back"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:padding="14dp"
+            android:src="@drawable/back" />
+
+
+        <TextView
+            android:id="@+id/callcar_main_currentcity"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:text="Settings"
+            android:hint=""
+            android:textSize="18sp"
+            android:textColor="@color/text_deep_black"
+
+            />
+        <TextView
+            android:id="@+id/textview_save"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:padding="14dp"
+            android:textSize="14sp"
+            android:textColor="@color/text_deep_black"
+            android:text="Save" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl"
+        android:orientation="vertical">
+
+        <com.sdsmdg.harjot.crollerTest.Croller
+            android:id="@+id/croller"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_centerInParent="true"
+            android:layout_weight="1"
+            app:back_circle_color="#EDEDED"
+            app:indicator_color="#0B3C49"
+            app:indicator_width="10"
+            app:is_continuous="true"
+            app:label_color="#000000"
+            app:main_circle_color="#FFFFFF"
+            app:max="300"
+            app:progress_primary_color="#0B3C49"
+            app:progress_secondary_color="#EEEEEE"
+            app:start_offset="45" />
+
+        <com.sdsmdg.harjot.crollerTest.Croller
+        android:id="@+id/croller2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_centerInParent="true"
+        app:back_circle_color="#EDEDED"
+        app:indicator_color="#0B3C49"
+        app:indicator_width="10"
+        app:is_continuous="true"
+        app:label_color="#000000"
+        app:main_circle_color="#FFFFFF"
+        app:max="6"
+        app:progress_primary_color="#0B3C49"
+        app:progress_secondary_color="#EEEEEE"
+        app:start_offset="45" />
+
+    </LinearLayout>
+</RelativeLayout>

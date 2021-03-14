@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="409dp"
+        android:layout_height="467dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="264dp"
+        android:layout_weight="1"
+        android:columnWidth="90dp"
+        android:gravity="center"
+        android:horizontalSpacing="0dp"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_marginEnd="290dp"
+        android:layout_marginBottom="-52dp"
+        android:text="Name">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/editViewName"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="-58dp"
+        android:inputType="text"
+        android:maxLines="1"
+        android:text="">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/editViewPrice"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="-84dp"
+        android:inputType="text"
+        android:maxLines="1"
+        android:text="">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/editViewSize"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="-116dp"
+        android:inputType="text"
+        android:maxLines="1"
+        android:text=""></EditText>
+
+    <AutoCompleteTextView
+        android:id="@+id/editViewStore"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="-146dp"
+        android:inputType="text"
+        android:maxLines="1"
+        android:text=""></AutoCompleteTextView>
+
+    <TextView
+        android:id="@+id/textViewPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_marginEnd="290dp"
+        android:layout_marginBottom="-82dp"
+        android:text="Price">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/textViewSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_marginEnd="290dp"
+        android:layout_marginBottom="-112dp"
+        android:text="Size"></TextView>
+
+    <TextView
+        android:id="@+id/textViewStore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_marginEnd="290dp"
+        android:layout_marginBottom="-141dp"
+        android:text="Store">
+
+    </TextView>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_marginStart="45dp"
+        android:layout_marginBottom="-200dp"
+        android:background="@drawable/btn_oval"
+        android:onClick="SaveImage"
+        android:text="Save" />
+
+    <Button
+        android:id="@+id/btnSaveStore"
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_marginStart="85dp"
+        android:layout_marginBottom="-255dp"
+        android:background="@drawable/btn_oval"
+        android:onClick="LinkOnlineStore"
+        android:text="Go To Online Store" />
+
+    <Button
+        android:id="@+id/btnClose"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="-200dp"
+        android:onClick="ClosePreviewActivity"
+        android:background="@drawable/btn_oval"
+        android:text="Close" />
+</RelativeLayout>
