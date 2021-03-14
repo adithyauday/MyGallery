@@ -13,7 +13,7 @@
         android:largeHeap="true">
         <meta-data
             android:name="com.baidu.lbsapi.API_KEY"
-            android:value="GRK2shC4GopVIVE6Sy4Wc69yeVt4oLwh" >
+            android:value="Insert Baidu API key" >
         </meta-data>
         <activity android:name=".SignInActivity"></activity>
         <activity android:name=".ViewAndEditImageActivity" />
